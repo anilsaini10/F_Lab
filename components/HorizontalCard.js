@@ -4,7 +4,7 @@ import { View, Text, Box, FlatList, Image, HStack, VStack, Center } from 'native
 import { TouchableOpacity } from "react-native";
 
 const HorizontalCard = (props) => {
-
+// console.log(props.data[0].urlToImage)
     const arr = [{ "name": "All", "b": 2 }, { "name": "Android", "b": 2 }, { "name": "Cricket", "b": 2 }, { "name": "Iphone", "b": 2 }, { "name": "Google", "b": 2 }]
 
     return (
@@ -28,8 +28,8 @@ const HorizontalCard = (props) => {
                             <HStack justifyContent="space-between" width="95%" alignSelf="center" marginTop={2} >
 
                                 <VStack width="50%" >
-                                    <Text fontSize="16px" fontWeight="500" >{item.title.slice(0,40)}</Text>
-                                    <Text fontSize="14px" fontWeight="400">{item.description?item.description.slice(0, 50):"NA"}</Text>
+                                    <Text fontSize="16px" fontWeight="500" >{item.title}</Text>
+                                    <Text fontSize="14px" fontWeight="400">{item.description?item.description:"NA"}</Text>
                                 </VStack>
 
                                 <View width="112px" >

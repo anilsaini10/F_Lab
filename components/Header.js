@@ -13,7 +13,7 @@ const Header = () => {
                 </TouchableOpacity>
 
                 <View style={styles.subContainer}>
-                    <Text style={styles.centerText} >Zintlr News</Text>
+                    <Text style={styles.centerText} >News App</Text>
                 </View>
 
                 <TouchableOpacity onPress={() => { alert("Pressed"); }} style={styles.subContainer}>
